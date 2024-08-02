@@ -1,0 +1,220 @@
+.headerContainer {
+  width: 100%;
+  background-color: #101e2e;
+  /* height: 108px; */
+  padding: 35px 0px;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+}
+.containers {
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.1fr;
+  justify-content: center;
+  align-items: center;
+}
+.flexHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+}
+
+.logContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.smLogoContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logoImg {
+  width: 180px;
+  height: 32px;
+}
+.languageSuffle {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: 'Poppins';
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.arLogin {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+.enLogin {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+.arSignUP {
+  padding: 0px 22px;
+  height: 44px;
+  background-color: white;
+  color: #12375f;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.enSignUP {
+  padding: 0px 22px;
+  height: 44px;
+  background-color: white;
+  color: #12375f;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.drawerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.drawr {
+  width: 70% !important;
+  background-color: #101e2e !important;
+}
+.drawerItem {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.crossImg {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 22px 35px;
+}
+.smLinks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 16px;
+}
+.sLink {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.sLanguageSuffle {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: 3rem;
+}
+.smButtons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 3rem;
+}
+.enSmLogin {
+  font-size: 20px;
+  font-weight: 500;
+  width: 200px;
+  color: #12375f;
+  height: 50px;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+.arSmLogin {
+  font-size: 16px;
+  font-weight: 500;
+  width: 200px;
+  color: #12375f;
+  height: 50px;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .links {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .links {
+    gap: 32px;
+  }
+  .headerContainer {
+    padding: 12px 0px;
+  }
+  .logoImg {
+    width: 160px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 500px) {
+  .drawr {
+    width: 100% !important;
+  }
+  .logoImg {
+    width: 135px;
+    height: 26px;
+    padding-left: 10px;
+  }
+}

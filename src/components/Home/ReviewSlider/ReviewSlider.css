@@ -1,0 +1,16 @@
+.review-container{
+}
+
+@media (max-width: 768px) {
+  .review-container{
+    padding-top: unset;
+    
+  }
+  
+  .slider-button{
+    display: none;
+  }
+  
+
+  
+}

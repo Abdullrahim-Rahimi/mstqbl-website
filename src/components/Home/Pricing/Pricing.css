@@ -1,0 +1,201 @@
+.pricing-container {
+  padding: 140px 0px;
+  width: 80%;
+  margin: auto;
+}
+
+.price-card-container {
+  display: flex;
+  margin-top: 40px;
+}
+
+.price-card {
+  width: 31%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--white);
+  margin: 0px auto;
+}
+
+.selected {
+  background-color: var(--ink);
+}
+
+.planHeading {
+  color: var(--ink);
+  font-family: 'Benzin-Regular';
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.planPrice {
+  color: var(--ink);
+  font-family: 'Benzin-Regular';
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.planPara {
+  color: #495564;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.feat {
+  color: #495564;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.arrows {
+  margin: 10px 0px 40px 0px;
+}
+
+.feature-containers {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.selected .planHeading {
+  color: white;
+}
+
+.selected .planPrice {
+  color: white;
+}
+
+.selected .planPara {
+  color: white;
+}
+
+.selected .feat {
+  color: white;
+}
+
+.arrow-check {
+  width: 5%;
+  margin-right: 10px;
+}
+
+.priceCardSignupBtn {
+  align-items: center;
+  font-family: 'Poppins';
+  background: #00b795;
+  color: #fff;
+  align-self: center;
+  /* height: 40px; */
+  padding: 16px 26px;
+  border-radius: 33px;
+  font-size: 16px;
+  text-align: center;
+  /* gap: 6px */
+}
+.priceCardSignupBtn:hover {
+  opacity: 80%;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .price-card {
+    /* display: none; */
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .pricing-container {
+    padding: 80px 0px;
+  }
+
+  .price-card-container {
+    flex-direction: column;
+  }
+
+  .pricecards {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 840px) {
+}
+
+@media (max-width: 480px) {
+  .planHeading {
+    color: var(--ink);
+    font-family: 'Benzin-Regular';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .planPrice {
+    color: var(--ink);
+    font-family: Benzin-Regular;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding: 10px 0px;
+  }
+
+  .planPara {
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: unset;
+    margin: 10px 0px;
+  }
+
+  .pricing-container {
+    padding: 100px 0px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .priceCardSignupBtn {
+    padding: 10px 20px;
+    align-items: center;
+
+    width: 140px;
+    font-size: 12px;
+    align-self: center;
+    width: 100%;
+  }
+
+  .price-card {
+    padding: 20px 15px;
+  }
+}

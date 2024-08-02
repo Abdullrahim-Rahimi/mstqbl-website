@@ -1,0 +1,122 @@
+
+
+#whyChooseUs {
+  padding: 150px 0px;
+ 
+}
+
+
+
+
+
+.whychooseus-cards {
+
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 45px;
+}
+
+.card-container {
+  width: 100%;
+  padding: 15px 20px;
+  box-shadow: rgba(116, 116, 116, 0.067) 0px 4px 16px 0px;
+
+  border-radius: 20px;
+}
+
+.imgContainer{
+  background-color:var(--offWhite);
+  padding: 20px;
+  width: 25%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px){
+
+
+  .whychooseus-cards {
+
+
+   grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-container {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 30px;
+ 
+  }
+
+ 
+
+  .cardHeading {
+
+    font-size: 16px;
+
+  }
+  
+  .cardPara {
+    color: #727f8f;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+
+  }
+}
+
+
+@media (max-width: 768px){
+
+
+  #whyChooseUs {
+    position: relative;
+
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: -23vh;
+    height: auto;
+    padding-top: 100px;
+    padding: 54px 0;
+  }
+
+  .whychooseus-cards{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  
+
+  .card-container{
+    width: 100%;
+    padding: 20px;
+  }
+
+
+  .empower {
+    font-size: 24px;
+    font-style: normal;
+    padding-bottom: 16px;
+  }
+
+  .imgContainer{
+
+    padding: 15px;
+    width: 30%; 
+
+    border-radius: 7px;
+  }
+
+}
+
+
+
+@media (max-width: 480px){
+  
+}

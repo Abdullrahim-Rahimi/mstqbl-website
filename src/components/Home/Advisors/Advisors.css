@@ -1,0 +1,79 @@
+.advisors-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.advisorsLeft {
+
+  width: 90%; 
+  display: flex;
+  flex-direction: column; 
+  padding-top: 80px;
+}
+
+
+
+.advisorImage {
+  width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+
+  .advisors-container {
+   align-items: center;
+  }
+
+  .advisorsLeft {
+    width: 100%;
+    
+
+  }
+
+  .willBe{
+
+    font-size: 24px;
+    margin: 10px 0px;
+
+  }
+
+  .advisorsRight {
+    width: 100%;
+  }
+
+ 
+  
+}
+
+
+@media (max-width: 768px) {
+  .advisors-container{
+    grid-template-columns: repeat(1, 1fr);
+  
+ 
+
+  }
+
+  .advisorsLeft{
+   
+    padding-top: 0px;
+  }
+
+  .advisorsRight {
+    width: 100%;
+   text-align: center;
+  }
+
+  .willBe{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+
+  }
+  .advisorPara {
+   text-align: center;
+  }
+  
+ 
+}

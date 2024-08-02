@@ -1,0 +1,183 @@
+#download {
+  background-image: url("../../../assets/images/triangles.svg");
+  background-color: var(--ink);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  z-index: 0;
+  position: relative;
+  border-radius: 16px;
+  padding: 100px 30px 0px 30px;
+  /* padding-left: 106px;
+    padding-right: 106px; */
+}
+
+.download-container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 85%;
+  margin: 0px auto; 
+
+}
+
+.downHeading {
+  color: #fff;
+  font-family: "Benzin-Medium";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  line-height: 60px;
+   margin-bottom: 30px; 
+
+
+} 
+
+.downLeft {
+  width: 54%;
+ 
+ padding-top: 70px; 
+}
+
+.downRight {
+  width: 35%;
+}
+
+.downIphoneImage {
+  width: 100%;
+  /* float: right; */
+}
+
+.downlinks {
+  display: flex;
+  /* flex-direction: column; */
+  width: 80%;
+
+  /* justify-content: space-between; */
+}
+
+.downimage {
+
+  width: 30%;
+  margin-right: 20px;
+}
+
+@media (max-width: 1024px) {
+  #download {
+    padding: 56px 50px 0px 50px;
+    /* padding-left: 106px;
+      padding-right: 106px; */
+  }
+
+  .downRight {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    width: 20%;
+  }
+
+  .downLeft {
+    width: 80%;
+    padding-top: 50px;
+   
+  }
+
+  .download-container {
+
+    padding: 0px 0px;
+  
+
+  }
+  
+
+  .downHeading {
+    color: #fff;
+    font-family: "Benzin-Medium";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    width: 100%;
+    margin-bottom: 30px;
+
+    /* padding-bottom: 24px; */
+  }
+}
+
+@media (max-width: 768px) {
+  #download {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .download-container {
+    flex-direction: column;
+    padding: 0px 10px;
+    align-items: center;
+  }
+
+  .downHeading {
+
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    text-align: center;
+
+  } 
+
+  .downlinks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 30px;
+  }
+
+  .downimage {
+    width: 50%;
+    margin-right: unset;
+  }
+
+  .downRight {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .downLeft {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .downHeading {
+    font-size: 21px;
+
+
+    /* padding-bottom: 24px; */
+  }
+
+  .download-container {
+
+    width: 100%;
+    margin: 0px auto; 
+  
+  }
+
+  .downimage {
+
+    margin-bottom: 20px;
+  }
+
+  .downRight {
+
+    margin-top: 0px;
+
+  }
+  
+}

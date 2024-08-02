@@ -1,0 +1,134 @@
+import triAr from "../../assets/images/triangles-rtl.svg";
+
+export const customCss = `
+            #howPara {
+  padding: 0;
+}
+.advisorsLeft {
+  padding-right: 0 !important;
+}
+.slider-button {
+  transform: rotate(180deg) !important;
+}
+.numbered-line {
+  left: -20px;
+}
+.nav-link {
+  font-family: "Cairo", sans-serif;
+}
+.lang-btn {
+  color: #fff;
+
+  font-family: "Benzin-Regular" !important;
+  font-size: 14px !important;
+  font-style: normal;
+  text-transform: capitalize;
+  font-weight: 400 !important;
+  line-height: normal;
+  opacity: 0.800000011920929;
+}
+.hero {
+  background-image: url("${triAr}");
+}
+#download {
+  background-image: url("${triAr}");
+}
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+button {
+  font-family: "Cairo", sans-serif !important;
+}
+.content h3 {
+  text-align: start;
+}
+.content p {
+  text-align: start;
+}
+.content {
+  padding-right: 20px;
+}
+
+.numbered-line {
+  right: 23px;
+}
+@media screen and (max-width: 767px) {
+  #navbarNav {
+    margin-top: -2vh;
+  }
+  .login-des a {
+    width: 100%;
+    font-size: 16px !important;
+  }
+  #empower {
+    color: var(--ink);
+    text-align: center;
+    font-family: Cairo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%; /* 51.2px */
+  }
+  .content h3 {
+    text-align: start;
+    color: #000;
+    text-align: right;
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .content p {
+    text-align: start;
+  }
+  .content {
+    padding-right: 40px;
+    padding-left: 0;
+  }
+  #pricing #empower {
+    color: var(--ink);
+    text-align: center;
+    font-family: Cairo;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 33.6px */
+  }
+  .r-img {
+    width: 48px;
+    padding-right: 5px;
+  }
+  .r-name {
+    margin-right: 25px;
+  }
+  .langBtn > button {
+    color: #fff !important;
+    font-family: "Benzin-Regular" !important;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.800000011920929 !important;
+  }
+  .navbar-toggler {
+    position: absolute;
+    left: 30px;
+    right: auto;
+    top: 20px;
+  }
+  .right-text {
+    text-align: end;
+  }
+}
+
+          `

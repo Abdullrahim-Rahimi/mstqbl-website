@@ -1,0 +1,290 @@
+.contactUsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 11rem 0rem;
+}
+.formContainer {
+  width: 100%;
+  border: 1px solid #f5f5f5;
+  border-radius: 10px;
+  padding: 2rem 0px;
+}
+.form {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
+}
+.label {
+  font-size: 20px;
+  color: #12375f;
+  font-weight: 400;
+}
+.inputs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.enInput {
+  width: 100%;
+  height: 68px;
+  background-color: #f3f5f7;
+  border-radius: 6px;
+  padding: 0px 20px;
+  font-size: 22px;
+  color: #12375f;
+  font-weight: 400;
+  font-family: Lato;
+}
+.arInput {
+  width: 100%;
+  height: 68px;
+  background-color: #f3f5f7;
+  border-radius: 6px;
+  padding: 0px 20px;
+  font-size: 22px;
+  color: #12375f;
+  font-weight: 400;
+  font-family: Cairo;
+}
+.selectInput {
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+}
+
+.subjectContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* // lassName='w-full max-h-[500px] srollBar overflow-auto bg-white-main border-[2px] border-solid border-brand-main rounded-[8px] p-3 absolute -top-[240px] z-30' */
+.selectBoxOptionContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: absolute;
+  top: 5rem;
+  background-color: white;
+  max-height: 350px;
+  overflow: scroll;
+  box-shadow: -2px 0px 10px -4px rgba(0, 0, 0, 0.74);
+  padding: 1rem;
+  border-radius: 10px;
+  z-index: 100;
+}
+.selectBoxOptionContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.selectBoxOption {
+  background-color: #f3f5f7;
+  border: 1px solid #f3f5f7;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.selectBoxOption:hover {
+  border: 1px solid #00b795;
+}
+.subjectSelected {
+  border: 1px solid #00b795;
+}
+
+.arTextArea {
+  max-width: 100%;
+  height: 285px;
+  background-color: #f3f5f7;
+  border-radius: 6px;
+  padding: 20px 20px;
+  font-size: 22px;
+  color: #12375f;
+  font-weight: 400;
+  letter-spacing: -1px;
+  font-family: Cairo;
+}
+.enTextarea {
+  max-width: 100%;
+  height: 285px;
+  background-color: #f3f5f7;
+  border-radius: 6px;
+  padding: 20px 20px;
+  font-size: 22px;
+  color: #12375f;
+  font-weight: 400;
+  letter-spacing: -1px;
+  font-family: Lato;
+}
+::placeholder {
+  letter-spacing: 1px;
+  font-size: 22px;
+  opacity: 25%;
+  font-weight: 400;
+  color: #12375f;
+}
+textarea:focus {
+  outline: none;
+}
+
+.submitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  max-width: 500px;
+  width: 100%;
+  height: 68px;
+  border-radius: 44px;
+  background-color: #00b795;
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+  font-family: Lato;
+  letter-spacing: 1px;
+  position: relative;
+}
+.submitBtn:hover {
+  opacity: 80%;
+}
+.customSelect {
+  width: 100%;
+  position: relative;
+}
+.selectArrow {
+  position: absolute;
+  right: 30px;
+  top: 39%;
+  width: 18px;
+  height: 18px;
+}
+.arSelectArrow {
+  position: absolute;
+  left: 30px;
+  top: 39%;
+  width: 18px;
+  height: 18px;
+}
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.message {
+  font-size: 17px;
+  color: #9e9f9f;
+  font-weight: 400;
+  word-spacing: 4px;
+}
+.message a {
+  text-decoration: none;
+}
+.messageLink {
+  color: #12375f;
+  font-weight: 600;
+}
+
+/* media qurries ----------->  */
+@media screen and (max-width: 1000px) {
+  .form {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .form {
+    padding: 2rem 2rem;
+  }
+  .inputs {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ::placeholder {
+    font-size: 14px;
+  }
+  .enInput {
+    height: 48px;
+    font-size: 16px;
+    padding: 0px 10px;
+  }
+  .arInput {
+    height: 48px;
+    font-size: 14px;
+    padding: 0px 10px;
+  }
+  .arTextArea {
+    height: 200px;
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+  .enTextarea {
+    height: 200px;
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+  .label {
+    font-size: 14px;
+  }
+  .selectBoxOption {
+    font-size: 12px;
+  }
+  .form {
+    padding: 1rem;
+  }
+  .selectArrow {
+    width: 12px;
+    height: 12px;
+    right: 16px;
+  }
+  .arSelectArrow {
+    position: absolute;
+    left: 14px;
+    top: 39%;
+    width: 12px;
+    height: 12px;
+  }
+  .formContainer {
+    padding: 0px;
+  }
+  .inputContainer {
+    gap: 10px;
+  }
+  .contactUsContainer {
+    margin-top: 8rem;
+    margin-bottom: 7rem;
+  }
+  .message {
+    font-size: 12px;
+  }
+  .submitBtn {
+    height: 48px;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  .selectBoxOptionContainer {
+    top: 60px;
+  }
+}

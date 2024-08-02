@@ -1,0 +1,1 @@
+export {H2, H5, HeadingText, Text, TextHeading} from './Heading'
